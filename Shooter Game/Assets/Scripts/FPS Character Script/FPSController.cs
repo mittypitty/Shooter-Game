@@ -30,6 +30,13 @@ public class FPSController : MonoBehaviour
     private CharacterController characterController;
     private Vector3 moveDir = Vector3.zero;
 
+    public LayerMask groundLayer;
+    private float rayDistance;
+    private float default_ControllerHeight;
+    private Vector3 default_CamPos;
+    private float camHeight;
+
+
     void Start()
     {
         //GameObject("FPS View").Find();
@@ -37,6 +44,10 @@ public class FPSController : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         speed = walkSpeed;
         is_moving = false;
+
+        rayDistance = characterController.height * 0.5f + characterController.radius;
+        default_ControllerHeight = characterController.height;
+        default_CamPos = firstPerson_view.localPosition;
     }
 
     void Update()
@@ -88,8 +99,11 @@ public class FPSController : MonoBehaviour
 
         if(is_grounded)
         {
+            PlayerCrouchingAndSprinting();
             moveDir = new Vector3(inputX * inputModifyFactor, -antiBumpFactor, inputY * inputModifyFactor);
             moveDir = transform.TransformDirection(moveDir) * speed;
+     
+            PlayerJump();
         }
 
         moveDir.y -= gravity * Time.deltaTime;
@@ -99,5 +113,92 @@ public class FPSController : MonoBehaviour
         is_moving = characterController.velocity.magnitude > 0.15f;
 
 
+    }
+
+    void PlayerCrouchingAndSprinting()
+    {
+        if(Input.GetKeyDown(KeyCode.C))
+        {
+            if(!is_crouching)
+            {
+                is_crouching = true;
+            }
+            else
+            {
+                if(CanGetUp())
+                {
+                    is_crouching = false;
+                }
+            }
+
+            StopCoroutine(MoveCameraCrouch());
+            StartCoroutine(MoveCameraCrouch());
+        }
+
+        if(is_crouching)
+        {
+            speed = crouchSpeed;
+        }
+        else
+        {
+            if(Input.GetKey(KeyCode.LeftShift))
+            {
+                speed = runSpeed;
+            }
+            else
+            {
+                speed = walkSpeed;
+            }
+        }
+    }
+
+    bool CanGetUp()
+    {
+        Ray groundRay = new Ray(transform.position, transform.up);
+        RaycastHit groundHit;
+        if (Physics.SphereCast(groundRay, characterController.radius + 0.5f, out groundHit, rayDistance, groundLayer))
+        {
+            if(Vector3.Distance(transform.position, groundHit.point) < 2.3f)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    IEnumerator MoveCameraCrouch()
+    {
+        characterController.height = is_crouching ? default_ControllerHeight / 1.5f : default_ControllerHeight;
+        characterController.center = new Vector3(0f, characterController.height / 2f, 0f);
+
+        camHeight = is_crouching ? default_CamPos.y / 1.5f : default_CamPos.y;
+
+        while(Mathf.Abs(camHeight - firstPerson_view.localPosition.y) > 0.01f)
+        {
+            firstPerson_view.localPosition = Vector3.Lerp(firstPerson_view.localPosition, new Vector3(default_CamPos.x, camHeight, default_CamPos.z), Time.deltaTime * 11f);
+
+            yield return null;
+        }
+
+    }
+    void PlayerJump()
+    {
+        if(Input.GetKeyDown(KeyCode.Space)) 
+        {
+            if(is_crouching)
+            {
+                if(CanGetUp())
+                {
+                    is_crouching = false;
+
+                    StopCoroutine(MoveCameraCrouch());
+                    StartCoroutine(MoveCameraCrouch());
+                }
+            }
+            else
+            {
+                moveDir.y = jumpSpeed;
+            }
+        }
     }
 }
