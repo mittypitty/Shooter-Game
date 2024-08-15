@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\FPS Character Script\FPSController.cs" />
+    <Compile Include="Assets\Scripts\FPS Character Script\FPSPlayeAnimation.cs" />
     <Compile Include="Assets\Scripts\FPS Character Script\FPSMouseLook.cs" />
   </ItemGroup>
   <ItemGroup>
