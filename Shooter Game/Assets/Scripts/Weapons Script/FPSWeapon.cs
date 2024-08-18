@@ -6,7 +6,7 @@ public class FPSWeapon : MonoBehaviour
 {
     private GameObject muzzleFlash;
 
-    private void Awake()
+    void Awake()
     {
         muzzleFlash = transform.Find("Muzzle Flash").gameObject;
         muzzleFlash.SetActive(false);
@@ -23,4 +23,4 @@ public class FPSWeapon : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         muzzleFlash.SetActive(false);
     }
-}
+} //class

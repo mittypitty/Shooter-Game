@@ -523,6 +523,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 1
+  weaponManager: {fileID: 0}
 --- !u!114 &7923573526797794926
 MonoBehaviour:
   m_ObjectHideFlags: 0
