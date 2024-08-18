@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\game\\Shooter-Game\\Shooter Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F5E0EBC1-6100-BB8F-43B8-A378E64B9F4B}|Assembly-CSharp.csproj|C:\\game\\Shooter-Game\\Shooter Game\\assets\\scripts\\fps character script\\fpscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F5E0EBC1-6100-BB8F-43B8-A378E64B9F4B}|Assembly-CSharp.csproj|c:\\game\\shooter-game\\shooter game\\assets\\scripts\\fps character script\\fpscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5E0EBC1-6100-BB8F-43B8-A378E64B9F4B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fps character script\\fpscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{F5E0EBC1-6100-BB8F-43B8-A378E64B9F4B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons script\\weaponmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5E0EBC1-6100-BB8F-43B8-A378E64B9F4B}|Assembly-CSharp.csproj|c:\\game\\shooter-game\\shooter game\\assets\\scripts\\weapons script\\fpsweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F5E0EBC1-6100-BB8F-43B8-A378E64B9F4B}|Assembly-CSharp.csproj|C:\\game\\Shooter-Game\\Shooter Game\\assets\\scripts\\weapons script\\fpsweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5E0EBC1-6100-BB8F-43B8-A378E64B9F4B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons script\\fpsweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -42,8 +42,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Weapons Script\\WeaponManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T21:09:01.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-15T21:09:01.235Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Weapons Script\\FPSWeapon.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAAwBoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T21:08:25.872Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-15T21:08:25.872Z"
             },
             {
               "$type": "Document",
@@ -78,7 +76,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\FPS Character Script\\FPSController.cs",
               "ToolTip": "C:\\game\\Shooter-Game\\Shooter Game\\Assets\\Scripts\\FPS Character Script\\FPSController.cs",
               "RelativeToolTip": "Assets\\Scripts\\FPS Character Script\\FPSController.cs",
-              "ViewState": "AQIAAOIAAAAAAAAAAADwv/wAAAAAAAAA",
+              "ViewState": "AQIAABQBAAAAAAAAAAAwwC4BAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-05T20:48:19.418Z",
               "EditorCaption": ""
@@ -91,7 +89,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\FPS Character Script\\FPSPlayeAnimation.cs",
               "ToolTip": "C:\\game\\Shooter-Game\\Shooter Game\\Assets\\Scripts\\FPS Character Script\\FPSPlayeAnimation.cs",
               "RelativeToolTip": "Assets\\Scripts\\FPS Character Script\\FPSPlayeAnimation.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAkwDIAAAAZAAAA",
+              "ViewState": "AQIAACwAAAAAAAAAAAAswD4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-13T20:23:44.617Z",
               "EditorCaption": ""

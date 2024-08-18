@@ -14,6 +14,8 @@ public class FPSPlayeAnimation : MonoBehaviour
     private string standShoot = "StandShoot";
     private string crouchShoot = "CrouchShoot";
     private string reload = "Reload";
+
+    public RuntimeAnimatorController animController_Pistol, animatorController_MachineGun;
     void Awake() { anim = GetComponent<Animator>(); }
 
 
@@ -51,5 +53,17 @@ public class FPSPlayeAnimation : MonoBehaviour
     public void ReloadGun()
     {
         anim.SetTrigger(reload);
+    }
+
+    public void ChangeController(bool isPistol)
+    {
+        if(isPistol)
+        {
+            anim.runtimeAnimatorController = animController_Pistol;
+        }
+        else
+        {
+            anim.runtimeAnimatorController = animatorController_MachineGun;
+        }
     }
 }

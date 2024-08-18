@@ -523,7 +523,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 1
-  weaponManager: {fileID: 0}
+  weapon_Manager: {fileID: 0}
 --- !u!114 &7923573526797794926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -549,6 +549,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9884911a63aa3974bb9d0c5db9e7fd70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animController_Pistol: {fileID: 9100000, guid: 7b23aaf542ae766438b6c95968087c73, type: 2}
+  animatorController_MachineGun: {fileID: 9100000, guid: 0770a54f266a24bc7b5bd0ee2d2b4f0a, type: 2}
 --- !u!4 &1088040230684340281 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f3aa36c2aed114223bc6a264d9f9018c, type: 3}
