@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\FPS Character Script\FPSPlayeAnimation.cs" />
     <Compile Include="Assets\Scripts\FPS Character Script\FPSMouseLook.cs" />
     <Compile Include="Assets\Scripts\Weapons Script\WeaponManager.cs" />
+    <Compile Include="Assets\Scripts\Weapons Script\FPSHandsWeapon.cs" />
     <Compile Include="Assets\Scripts\Weapons Script\FPSWeapon.cs" />
   </ItemGroup>
   <ItemGroup>

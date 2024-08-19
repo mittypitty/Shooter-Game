@@ -355,6 +355,7 @@
 "Assets/Scripts/FPS Character Script/FPSController.cs"
 "Assets/Scripts/FPS Character Script/FPSMouseLook.cs"
 "Assets/Scripts/FPS Character Script/FPSPlayeAnimation.cs"
+"Assets/Scripts/Weapons Script/FPSHandsWeapon.cs"
 "Assets/Scripts/Weapons Script/FPSWeapon.cs"
 "Assets/Scripts/Weapons Script/WeaponManager.cs"
 -langversion:9.0
